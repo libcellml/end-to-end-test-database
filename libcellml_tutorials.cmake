@@ -38,7 +38,7 @@ set(TEST_CMAKELISTS_DIR
 )
 set(TEST_EXPECTED_RESULTS
   tutorials/tutorial1/expected_results/
-  "NOTFOUND"
+  tutorials/tutorial2/expected_results/
   "NOTFOUND"
   "NOTFOUND"
   "NOTFOUND"
