@@ -18,6 +18,11 @@ set(PYTEST_TARGETS
   tutorials/tutorial3/tutorial3_complete.py
   tutorials/tutorial4/tutorial4_complete.py
   tutorials/tutorial5/tutorial5_complete.py
+  tutorials/hh_tutorial1/createGateModel_complete.py
+  tutorials/hh_tutorial2/createPotassiumChannelModel_complete.py
+  tutorials/hh_tutorial3/debugSodiumChannelModel_complete.py
+  tutorials/hh_tutorial4/generateMembraneModel_complete.py
+  tutorials/hh_tutorial5/solveGeneratedCode_complete.py
 )
 set(PYTEST_TARGETS_ENV
   "PYTHONPATH=@TEST_ROOT@/tutorials/utilities/"
@@ -30,17 +35,11 @@ set(TEST_TARGETS_ARGS
   tutorials/tutorial5/MysteryModel.cellml
   "NOTFOUND"
   tutorials/hh_tutorial2/
-  tutorials/hh_tutorial3/sodiumChannelModel_broken.cellml
+  tutorials/hh_tutorial3/SodiumChannelModel_broken.cellml
   tutorials/hh_tutorial4/MembraneModel.cellml
   "NOTFOUND"
 )
-set(PYTEST_TARGETS_ARGS
-  tutorials/tutorial1/tutorial1.cellml
-  tutorials/tutorial2/tutorial2.cellml
-  "NOTFOUND"
-  "NOTFOUND"
-  tutorials/tutorial5/MysteryModel.cellml
-)
+set(PYTEST_TARGETS_ARGS ${TEST_TARGETS_ARGS})
 set(TEST_CMAKELISTS_DIR
   tutorials/tutorial1
   tutorials/tutorial2
