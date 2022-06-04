@@ -12,6 +12,16 @@ set(TEST_TARGETS
   generateMembraneModel_complete
   solveGeneratedCode_complete
 )
+set(PYTEST_TARGETS
+  tutorials/tutorial1/tutorial1_complete.py
+  tutorials/tutorial2/tutorial2_complete.py
+  tutorials/tutorial3/tutorial3_complete.py
+  tutorials/tutorial4/tutorial4_complete.py
+  tutorials/tutorial5/tutorial5_complete.py
+)
+set(PYTEST_TARGETS_ENV
+  "PYTHONPATH=@TEST_ROOT@/tutorials/utilities/"
+)
 set(TEST_TARGETS_ARGS
   tutorials/tutorial1/tutorial1.cellml
   tutorials/tutorial2/tutorial2.cellml
@@ -23,6 +33,13 @@ set(TEST_TARGETS_ARGS
   tutorials/hh_tutorial3/sodiumChannelModel_broken.cellml
   tutorials/hh_tutorial4/MembraneModel.cellml
   "NOTFOUND"
+)
+set(PYTEST_TARGETS_ARGS
+  tutorials/tutorial1/tutorial1.cellml
+  tutorials/tutorial2/tutorial2.cellml
+  "NOTFOUND"
+  "NOTFOUND"
+  tutorials/tutorial5/MysteryModel.cellml
 )
 set(TEST_CMAKELISTS_DIR
   tutorials/tutorial1
