@@ -60,7 +60,7 @@ set(TEST_EXPECTED_RESULTS
   "NOTFOUND"
   "NOTFOUND"
   "NOTFOUND"
-  "NOTFOUND"
+  "tutorials/hh_tutorial3/expected_results/"
   "NOTFOUND"
   "NOTFOUND"
 )
