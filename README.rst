@@ -23,5 +23,4 @@ TEST_TARGETS, TEST_TARGETS_ARGS, TEST_CMAKELISTS_DIR, and TEST_EXPECTED_RESULTS 
 For tests that take multiple arguments the TEST_TARGETS_ARGS entry should have individual arguments separated with '|'.
 When passing multiple arguments to a single test case there cannot be any spaces between individual arguments.
 
-When defining a expected results location as a directory it **must** end with a trailing path sperator token.
-
+When defining a expected results location as a directory it **must** end with a trailing path separator token.
