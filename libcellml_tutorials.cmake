@@ -1,5 +1,5 @@
 set(TEST_GIT_REPO "https://github.com/libcellml/userguides")
-set(TEST_COMMIT_HASH "v0.2.0-dev.1")
+set(TEST_COMMIT_HASH "v0.2.0")
 
 set(TEST_TARGETS 
   tutorial1_complete
@@ -56,14 +56,14 @@ set(TEST_CMAKELISTS_DIR
 set(TEST_EXPECTED_RESULTS
   tutorials/tutorial1/expected_results/
   tutorials/tutorial2/expected_results/
-  "NOTFOUND"
-  "NOTFOUND"
-  "NOTFOUND"
-  "NOTFOUND"
-  "NOTFOUND"
+  tutorials/tutorial3/expected_results/
+  tutorials/tutorial4/expected_results/
+  tutorials/tutorial5/expected_results/
+  "tutorials/hh_tutorial1/expected_results/"
+  "tutorials/hh_tutorial2/expected_results/"
   "tutorials/hh_tutorial3/expected_results/"
-  "NOTFOUND"
-  "NOTFOUND"
+  "tutorials/hh_tutorial4/expected_results/"
+  "tutorials/hh_tutorial5/expected_results/"
 )
 set(PYTEST_EXPECTED_RESULTS ${TEST_EXPECTED_RESULTS})
 
