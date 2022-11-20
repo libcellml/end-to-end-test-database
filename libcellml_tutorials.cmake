@@ -1,5 +1,5 @@
 set(TEST_GIT_REPO "https://github.com/libcellml/userguides")
-set(TEST_COMMIT_HASH "v0.2.0")
+set(TEST_COMMIT_HASH "6975dfb4")
 
 set(TEST_TARGETS 
   tutorial1_complete
@@ -59,11 +59,11 @@ set(TEST_EXPECTED_RESULTS
   tutorials/tutorial3/expected_results/
   tutorials/tutorial4/expected_results/
   tutorials/tutorial5/expected_results/
-  "tutorials/hh_tutorial1/expected_results/"
-  "tutorials/hh_tutorial2/expected_results/"
-  "tutorials/hh_tutorial3/expected_results/"
-  "tutorials/hh_tutorial4/expected_results/"
-  "tutorials/hh_tutorial5/expected_results/"
+  tutorials/hh_tutorial1/expected_results/
+  tutorials/hh_tutorial2/expected_results/
+  tutorials/hh_tutorial3/expected_results/
+  tutorials/hh_tutorial4/expected_results/
+  tutorials/hh_tutorial5/expected_results/
 )
 set(PYTEST_EXPECTED_RESULTS ${TEST_EXPECTED_RESULTS})
 
