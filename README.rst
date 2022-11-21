@@ -24,3 +24,21 @@ For tests that take multiple arguments the TEST_TARGETS_ARGS entry should have i
 When passing multiple arguments to a single test case there cannot be any spaces between individual arguments.
 
 When defining an expected results location as a directory it **must** end with a trailing path separator token.
+
+Advanced usage
+--------------
+
+The testing framework now uses `numdiff <https://github.com/cmlibs-dependencies/numdiff>`_ to compare the difference between files.
+It is also possible to pass *numdiff* arguments directly (indirectly) to *numdiff*.
+To pass arguments to *numdiff* you need to have a file that has the same name as the expected output file but with the added suffix *.numdiff*.
+For example, if an expected file is named *results.txt* then the file for passing arguments to *numdiff* would be *results.txt.numdiff*.
+
+When passing arguments to *numdiff* the results.txt.numdiff file must define the CMake variable *NUMDIFF_ARGS*.
+An example results.txt.numdiff file is shown below::
+
+  set(NUMDIFF_ARGS "-R;version = [0-9]+\\.[0-9]+\\.[0-9]")
+
+In this example lines matching 'version = 0.3.0' (and all other version numbers) will be ignored.
+You cannot use the semi-colon (;) character in the definition of the arguments you pass to *numdiff*.
+The semi-colon character when defining the *NUMDIFF_ARGS* variable is solely for the use of separating *numdiff* arguments.
+You must also double escape characters that are not valid CMake escape sequences, as is shown in the example above with the fullstop (.) character.
