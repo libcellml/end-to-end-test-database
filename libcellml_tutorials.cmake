@@ -1,5 +1,5 @@
 set(TEST_GIT_REPO "https://github.com/libcellml/userguides")
-set(TEST_COMMIT_HASH "6975dfb4")
+set(TEST_COMMIT_HASH "e3f2af6a")
 
 set(TEST_TARGETS 
   tutorial1_complete
