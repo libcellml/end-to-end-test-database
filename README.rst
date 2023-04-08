@@ -25,6 +25,10 @@ When passing multiple arguments to a single test case there cannot be any spaces
 
 When defining an expected results location as a directory it **must** end with a trailing path separator token.
 
+As an alternative to specifying the suite using the above variables.
+A reference to an existing test suite definition can be made using the TEST_EXTERNAL_REFERENCE entry.
+The value of the TEST_EXTERNAL_REFERENCE must be a test suite definition file that can be downloaded with the CMake file download command.
+
 Advanced usage
 --------------
 
