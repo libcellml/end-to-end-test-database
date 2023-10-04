@@ -1,5 +1,5 @@
 set(TEST_GIT_REPO "https://github.com/libcellml/tutorials")
-set(TEST_COMMIT_HASH "55572ae")
+set(TEST_COMMIT_HASH "e469ed3")
 
 set(TEST_TARGETS 
   tutorial1_complete
@@ -26,7 +26,7 @@ set(PYTEST_TARGETS
   hh_tutorial5/solveGeneratedCode_complete.py
 )
 set(PYTEST_TARGETS_ENV
-  "PYTHONPATH=@TEST_ROOT@/utilities/"
+  "PYTHONPATH=@TEST_ROOT@/resources/code/utilities/"
 )
 set(TEST_TARGETS_ARGS
   tutorial1/tutorial1.cellml
